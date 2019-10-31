@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Menu</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a id="logolink" href="index.html"> <img src="logo.png" height="50px"></img></a>
+        <div class="links">
+
+          <a href="register.html">REGISTER</a>
+          <a href="menu.html">MENU</a>
+          <a href="#contact">CONTACT US</a>
+          <a href="index.html#about">ABOUT</a>
+
+
+        </div>
+      </div>
+    </header>
+  <div id="bg">
+    <div id="brand">
+    <h1>MG FOODS</h1>
+    <p>Best ever in the world</p>
+  </div>
+  </div>
+  <div id="menu">
+
+    <h3>MENU</h3> <button  id="button" onclick="showDetails()">Details &nbsp &nbsp<i class="arrow down"></i></button>
+    <div class="item">
+      Alu wadi - AW
+        <p class="details">Price : Rs.45/-</p>
+      </div>
+      <div class="item">
+      CHeese Misal Pav - CMP
+      <p class="details">Price : Rs.75/-</p>
+      </div>
+      <div class="item">
+      Corn Wadapav - CornW
+      <p class="details">Price : Rs.40/-</p>
+      </div>
+      <div class="item">
+        Chineese pav bhaji - CPB
+      <p class="details">Price : Rs.110/-</p>
+      </div>
+      <div class="item">
+        classic wadapav - CW
+        <p class="details">Price : Rs.25/-</p>
+        </div>
+      <div class="item">
+        french fries - FF
+        <p class="details">Price : Rs.50/-</p>
+      </div>
+      <div class="item">
+          kothimbir wadi - KW
+          <p class="details">Price : Rs.45/-</p>
+          </div>
+      <div class="item">
+          misal pav - MP
+        <p class="details">Price : Rs.65/-</p>
+        </div>
+        <div class="item">
+          mix veg wadapav - MVW
+        <p class="details">Price : Rs.40/-</p>
+        </div>
+        <div class="item">
+            pav bhaji - PB
+        <p class="details">Price : Rs.95/-</p>
+        </div>
+        <div class="item">
+            Peri Peri Fries - PPF
+          <p class="details">Price : Rs.60/-</p>
+        </div>
+        <div class="item">
+          Punjabi Samosa - PS
+          <p class="details">Price : Rs.40/-</p>
+        </div>
+        <div class="item">
+          Paneer Wadapav - PW
+          </div>
+          <p class="details">Price : Rs.50/-</p>
+          <div class="item">
+            Sabudana Wada - SW
+            <p class="details">Price : Rs.40/-</p>
+            </div>
+            <div class="item">
+            Thalipeeth - TP
+            <p class="details">Price : Rs.85/-</p>
+            </div>
+              <div class="item">
+                Wada Sample - WS
+                <p class="details">Price : Rs.80/-</p>
+              </div>
+
+  </div>
+
+  <footer>
+    <div id="contact">
+      <h3>CONTACT US :</h3>
+      <p>SREEKAR : gadasusreekar@gmail.com</p>
+      <p>SASIDHAR : fsdfgnbadunf@gmail.com</p>
+    <p>VATSA : mvsid@gmail.com</p>
+
+    </div>
+  </footer>
+
+
+  </body>
+  <script>
+    function showDetails() {
+
+  var x = document.getElementsByClassName("details");
+
+var i;
+for (i = 0; i < x.length; i++) {
+  if (x[i].style.display == "none") {
+  x[i].style.display = "block";
+  } else {
+  x[i].style.display = "none";
+  }
+}
+
+  }
+
+  </script>
+</html>

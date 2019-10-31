@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" type="image/ico" href="breado_icon.png" />
+    <title>Registration</title>
+
+  </head>
+  <body>
+    <header id="reg_head">
+      <div id="logo">
+        <a id="logolink" href="index.html"> <img src="logo.png" height="50px"></img></a>
+        <div class="links">
+
+          <a href="register.html">REGISTER</a>
+          <a href="order.html">ORDER</a>
+          <a href="menu.html">MENU</a>
+          <a href="#contact">CONTACT US</a>
+          <a href="index.html#about">ABOUT</a>
+
+
+        </div>
+      </div>
+    </header>
+
+<div id="body">
+
+<br><br><br><br>
+    <form id="reg" name="food" action="add_stock.php" method="get">
+      <h3>add stock</h3>
+      <input id="food_id" type="text" name="food_id" placeholder="Enter Food ID" required></input>
+      <input id="qty" type="number" name="quantity" min="1" placeholder="Enter Quantity" required></input>
+      <br>
+      <button type="submit" name="order_food" value="submit">ORDER</button>
+    </form>
+
+    <form id="reg" name="cust" action="cust_details.php" method="get">
+      <h3>Get Customer Details</h3>
+      <input type="text" name="cust_id" placeholder="Enter Customer ID" required></input>
+
+      <br><button type="submit" name="get_details" value="GET">GET</button>
+      
+    </form>
+
+    <form id="reg" name="prem" action="premium.php" method="get">
+      <h3>Get PREMIUM customers</h3>
+      <button type="submit" name="get_details" value="GET">GET</button>
+      <p id="details12"></p>
+    </form>
+
+
+    </div>
+  <footer id="reg_foot" >
+    <div id="contact">
+      <h3>CONTACT US :</h3>
+      <p>SREEKAR : gadasusreekar@gmail.com</p>
+      <p>SASIDHAR : fsdfgnbadunf@gmail.com</p>
+    <p>VATSA : mvsid@gmail.com</p>
+
+    </div>
+  </footer>
+
+  </body>
+  <script type="text/javascript">
+
+</html>

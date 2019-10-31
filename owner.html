@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" type="image/ico" href="breado_icon.png" />
+    <title>Registration</title>
+
+  </head>
+  <body>
+    <header id="reg_head">
+      <div id="logo">
+        <a id="logolink" href="index.html"> <img src="logo.png" height="50px"></img></a>
+        <div class="links">
+
+          <a href="register.html">REGISTER</a>
+          <a href="order.html">ORDER</a>
+          <a href="menu.html">MENU</a>
+          <a href="#contact">CONTACT US</a>
+          <a href="index.html#about">ABOUT</a>
+
+
+        </div>
+      </div>
+    </header>
+    <style media="screen">
+      #body{
+        display: none;
+      }
+    </style>
+<div id="ownerlogin">
+  <br><br><br><br><br><br>
+  <div id="reg" name="login">
+    <h3>owner Login</h3>
+    <input id="own_id" type="text" name="own_id" placeholder="Enter Owner ID" required></input>
+    <input id="own_pass" type="password" name="own_pass" placeholder="Enter Password" required></input>
+    <br>
+      <button onclick="login()">Let Me In!</button>
+
+  </div>
+</div>
+
+  <footer id="reg_foot" >
+    <div id="contact">
+      <h3>CONTACT US :</h3>
+      <p>SREEKAR : gadasusreekar@gmail.com</p>
+      <p>SASIDHAR : fsdfgnbadunf@gmail.com</p>
+    <p>VATSA : mvsid@gmail.com</p>
+
+    </div>
+  </footer>
+
+  </body>
+  <script type="text/javascript">
+  function login(){
+
+    var owner= document.getElementById("own_id").value;
+      var pass = document.getElementById("own_pass").value;
+
+      if(owner=="MG_man" && pass=="AAACNSSSSS"){
+
+      window.location = "http://localhost/restaurant_proj/ownered.html";
+      }
+      else{
+        alert("Wrong password!");
+      }
+  }
+  </script>
+</html>

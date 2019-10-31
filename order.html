@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" type="image/ico" href="breado_icon.png" />
+    <title>Registration</title>
+    <script type="text/javascript" src="register.js">
+    function check(){
+      var x = document.forms["custForm"]["pass1"].value;
+      var y = document.forms["custForm"]["pass2"].value;
+        if (x === y) {
+          alert("BOTH the passwords must be same!!");
+
+        }
+    }
+    function check1(){
+      var x = document.forms["worker"]["work_pass"].value;
+      var y = "takehim";
+        if (x === y) {
+        }
+        else{
+          alert("Wrong work pass !!");
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <header id="reg_head">
+      <div id="logo">
+        <a id="logolink" href="index.html"> <img src="logo.png" height="50px"></img></a>
+        <div class="links">
+
+          <a href="register.html">REGISTER</a>
+          <a href="order.html">ORDER</a>
+          <a href="menu.html">MENU</a>
+          <a href="#contact">CONTACT US</a>
+          <a href="index.html#about">ABOUT</a>
+
+
+        </div>
+      </div>
+    </header>
+<div class="body">
+
+
+    <form id="reg" name="food" action="orderFood.php" onsubmit="food_ord()" method="get">
+      <h3>Order Food</h3>
+      <input id="cust_id" type="text" name="cust_id" placeholder="Enter Customer ID" required></input>
+      <input id="foodid" type="text" name="food_id" placeholder="Enter Food ID" required></input>
+      <input id="qty" type="number" name="quantity" min="1" placeholder="Enter Quantity" required></input>
+      <br>
+      <button type="submit" name="order_food" value="submit">ORDER</button>
+    </form>
+
+    <form id="reg" name="table" action="book_table.php" onsubmit="book_table()" method="get">
+      <h3>Book A Table</h3>
+      <input type="text" name="cust_id" placeholder="Enter Customer ID" required></input>
+
+      <br><button type="submit" name="book_table" value="BOOK">BOOK</button>
+    </form>
+
+  <footer id="reg_foot">
+    <div id="contact">
+      <h3>CONTACT US :</h3>
+      <p>SREEKAR : gadasusreekar@gmail.com</p>
+      <p>SASIDHAR : fsdfgnbadunf@gmail.com</p>
+    <p>VATSA : mvsid@gmail.com</p>
+
+    </div>
+  </footer>
+
+</div>
+  </body>
+
+</html>
